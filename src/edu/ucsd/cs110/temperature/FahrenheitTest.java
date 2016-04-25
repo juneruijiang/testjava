@@ -15,9 +15,12 @@ public class FahrenheitTest {
         float value = 12.34f;
         Fahrenheit temp = new Fahrenheit(value); String string = temp.toString();
         String beginning = "" + value; String ending = " F";
-// Verify the suffix of the formatted string assertTrue(string.startsWith(beginning));
-// Verify the prefix of the formatted string assertTrue(string.endsWith(ending));
-// Verify the middle of the formatted string int endIndex = string.indexOf(ending);
+// Verify the suffix of the formatted string
+        assertTrue(string.startsWith(beginning));
+// Verify the prefix of the formatted string
+        assertTrue(string.endsWith(ending));
+// Verify the middle of the formatted string
+        int endIndex = string.indexOf(ending);
 // (Hint: what is the length of the middle of the string?)
         assertTrue(string.substring(0, endIndex).equals(beginning)); }
     @Test
